@@ -1,20 +1,26 @@
-#include<stdio.h>
- int main()
- {
- 	int i,n,sum=0,numbers;
- 	float average;
- 	
- 	printf("enter the range numbers(end limit):\n");
- 	 scanf("%d",&n);
- 	 printf("\enter the elementsone by one:\n");
- 	 for(i=0;i<n;++i)
- 	 {
-	  scanf("%d",&numbers);
-	sum += numbers;
+#include <stdio.h>
+
+void printDigits(int number) {
+    
+    if (number < 10) {
+        printf("%d\n", number);
+        return;
+    }
+
+
+    printDigits(number / 10);
+
+
+    printf("%d\n", number % 10);
 }
-   average = sum/n;
-   printf("\nsum of the %d numbers =%d",n,sum);
-   printf("\naverage of the %d numbers=%f",n, sum);
-   return 0;
-   
+
+int main() {
+    int number;
+    printf("Enter an integer number: ");
+    scanf("%d", &number);
+
+    printf("Digits of the number:\n");
+    printDigits(number);
+
+    return 0;
 }
