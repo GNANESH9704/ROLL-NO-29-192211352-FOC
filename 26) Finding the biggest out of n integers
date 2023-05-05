@@ -1,0 +1,9 @@
+n = int(input("Enter the number of integers: "))
+biggest = None
+
+for i in range(n):
+    num = int(input("Enter an integer: "))
+    if biggest is None or num > biggest:
+        biggest = num
+
+print("The biggest number is:", biggest)
