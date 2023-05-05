@@ -1,0 +1,17 @@
+a = 5
+b = 10
+
+# Before swapping
+print("Before swapping:")
+print("a =", a)
+print("b =", b)
+
+# Swapping without temporary variable
+a = a + b
+b = a - b
+a = a - b
+
+# After swapping
+print("After swapping:")
+print("a =", a)
+print("b =", b)
