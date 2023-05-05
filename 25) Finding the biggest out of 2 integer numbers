@@ -1,0 +1,11 @@
+a = 5
+b = 10
+
+# Find the biggest number
+if a > b:
+    biggest = a
+else:
+    biggest = b
+
+# Print the result
+print("The biggest number is:", biggest)
