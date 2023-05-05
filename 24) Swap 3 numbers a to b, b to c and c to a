@@ -1,0 +1,18 @@
+a = 5
+b = 10
+c = 15
+
+# Before swapping
+print("Before swapping:")
+print("a =", a)
+print("b =", b)
+print("c =", c)
+
+# Swapping in a cyclic manner
+a, b, c = b, c, a
+
+# After swapping
+print("After swapping:")
+print("a =", a)
+print("b =", b)
+print("c =", c)
